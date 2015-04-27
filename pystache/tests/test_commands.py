@@ -38,6 +38,7 @@ class CommandsTestCase(unittest.TestCase):
         Test a simple command-line case.
 
         """
+        
         actual = self.callScript("Hi {{thing}}", '{"thing": "world"}')
         self.assertEqual(actual, u"Hi world\n")
 
